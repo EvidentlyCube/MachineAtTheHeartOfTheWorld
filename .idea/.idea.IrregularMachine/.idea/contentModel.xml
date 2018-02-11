@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Dropbox (Retrocade.net)\Projects\IrregularMachine\IrregularMachine" t="IncludeRecursive">
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="Content" t="Include">
+        <e p="bg_1.jpg" t="Include" />
+        <e p="bg_monitor.png" t="Include" />
+        <e p="bin" t="Include">
+          <e p="${Platform}" t="Include">
+            <e p="bg_1.jpg" t="Include" />
+            <e p="bg_monitor.png" t="Include" />
+            <e p="constants.txt" t="Include" />
+            <e p="glyph_10.png" t="Include" />
+            <e p="glyph_11.png" t="Include" />
+            <e p="glyph_12.png" t="Include" />
+            <e p="glyph_13.png" t="Include" />
+            <e p="glyph_14.png" t="Include" />
+            <e p="glyph_15.png" t="Include" />
+            <e p="glyph_16.png" t="Include" />
+            <e p="glyph_17.png" t="Include" />
+            <e p="glyph_18.png" t="Include" />
+            <e p="glyph_20.png" t="Include" />
+            <e p="glyph_21.png" t="Include" />
+            <e p="glyph_22.png" t="Include" />
+            <e p="glyph_23.png" t="Include" />
+            <e p="glyph_30.png" t="Include" />
+            <e p="glyph_31.png" t="Include" />
+            <e p="glyph_32.png" t="Include" />
+            <e p="glyph_33.png" t="Include" />
+            <e p="glyph_34.png" t="Include" />
+            <e p="glyph_35.png" t="Include" />
+            <e p="glyph_36.png" t="Include" />
+            <e p="glyph_37.png" t="Include" />
+            <e p="glyph_40.png" t="Include" />
+            <e p="glyph_41.png" t="Include" />
+            <e p="glyph_50.png" t="Include" />
+            <e p="glyph_51.png" t="Include" />
+            <e p="glyph_60.png" t="Include" />
+            <e p="glyph_61.png" t="Include" />
+            <e p="glyph_62.png" t="Include" />
+            <e p="glyph_63.png" t="Include" />
+            <e p="glyph_64.png" t="Include" />
+            <e p="glyph_65.png" t="Include" />
+            <e p="glyph_70.png" t="Include" />
+            <e p="glyph_71.png" t="Include" />
+            <e p="glyph_72.png" t="Include" />
+            <e p="txt_InMemory.png" t="Include" />
+          </e>
+          <e p="DesktopGL" t="Include">
+            <e p="Content" t="Include">
+              <e p="bg_1.jpg" t="Include" />
+              <e p="bg_monitor.png" t="Include" />
+              <e p="constants.txt" t="Include" />
+              <e p="glyph_10.png" t="Include" />
+              <e p="glyph_11.png" t="Include" />
+              <e p="glyph_12.png" t="Include" />
+              <e p="glyph_13.png" t="Include" />
+              <e p="glyph_14.png" t="Include" />
+              <e p="glyph_15.png" t="Include" />
+              <e p="glyph_16.png" t="Include" />
+              <e p="glyph_17.png" t="Include" />
+              <e p="glyph_18.png" t="Include" />
+              <e p="glyph_20.png" t="Include" />
+              <e p="glyph_21.png" t="Include" />
+              <e p="glyph_22.png" t="Include" />
+              <e p="glyph_23.png" t="Include" />
+              <e p="glyph_30.png" t="Include" />
+              <e p="glyph_31.png" t="Include" />
+              <e p="glyph_32.png" t="Include" />
+              <e p="glyph_33.png" t="Include" />
+              <e p="glyph_34.png" t="Include" />
+              <e p="glyph_35.png" t="Include" />
+              <e p="glyph_36.png" t="Include" />
+              <e p="glyph_37.png" t="Include" />
+              <e p="glyph_40.png" t="Include" />
+              <e p="glyph_41.png" t="Include" />
+              <e p="glyph_50.png" t="Include" />
+              <e p="glyph_51.png" t="Include" />
+              <e p="glyph_60.png" t="Include" />
+              <e p="glyph_61.png" t="Include" />
+              <e p="glyph_62.png" t="Include" />
+              <e p="glyph_63.png" t="Include" />
+              <e p="glyph_64.png" t="Include" />
+              <e p="glyph_65.png" t="Include" />
+              <e p="glyph_70.png" t="Include" />
+              <e p="glyph_71.png" t="Include" />
+              <e p="glyph_72.png" t="Include" />
+              <e p="txt_InMemory.png" t="Include" />
+            </e>
+            <e p="txt_InMemoryOf.xnb" t="Include" />
+            <e p="txt_RogerZelazny.xnb" t="Include" />
+          </e>
+        </e>
+        <e p="constants.txt" t="Include" />
+        <e p="Content.mgcb" t="Include" />
+        <e p="glyph_10.png" t="Include" />
+        <e p="glyph_11.png" t="Include" />
+        <e p="glyph_12.png" t="Include" />
+        <e p="glyph_13.png" t="Include" />
+        <e p="glyph_14.png" t="Include" />
+        <e p="glyph_15.png" t="Include" />
+        <e p="glyph_16.png" t="Include" />
+        <e p="glyph_17.png" t="Include" />
+        <e p="glyph_18.png" t="Include" />
+        <e p="glyph_20.png" t="Include" />
+        <e p="glyph_21.png" t="Include" />
+        <e p="glyph_22.png" t="Include" />
+        <e p="glyph_23.png" t="Include" />
+        <e p="glyph_30.png" t="Include" />
+        <e p="glyph_31.png" t="Include" />
+        <e p="glyph_32.png" t="Include" />
+        <e p="glyph_33.png" t="Include" />
+        <e p="glyph_34.png" t="Include" />
+        <e p="glyph_35.png" t="Include" />
+        <e p="glyph_36.png" t="Include" />
+        <e p="glyph_37.png" t="Include" />
+        <e p="glyph_40.png" t="Include" />
+        <e p="glyph_41.png" t="Include" />
+        <e p="glyph_50.png" t="Include" />
+        <e p="glyph_51.png" t="Include" />
+        <e p="glyph_60.png" t="Include" />
+        <e p="glyph_61.png" t="Include" />
+        <e p="glyph_62.png" t="Include" />
+        <e p="glyph_63.png" t="Include" />
+        <e p="glyph_64.png" t="Include" />
+        <e p="glyph_65.png" t="Include" />
+        <e p="glyph_70.png" t="Include" />
+        <e p="glyph_71.png" t="Include" />
+        <e p="glyph_72.png" t="Include" />
+        <e p="obj" t="Include">
+          <e p="DesktopGL" t="Include">
+            <e p="Content" t="Include" />
+          </e>
+        </e>
+        <e p="txt_InMemory.png" t="Include" />
+      </e>
+      <e p="Core" t="Include">
+        <e p="GameCore.cs" t="Include" />
+        <e p="Gfx.cs" t="Include" />
+        <e p="IScene.cs" t="Include" />
+        <e p="KeyboardManager.cs" t="Include" />
+        <e p="Logger.cs" t="Include" />
+        <e p="S.cs" t="Include" />
+        <e p="SceneManager.cs" t="Include" />
+        <e p="StateMachine.cs" t="Include" />
+        <e p="Tween.cs" t="Include" />
+        <e p="TweenSequence.cs" t="Include" />
+      </e>
+      <e p="Extensions" t="Include">
+        <e p="RectangleExtension.cs" t="Include" />
+        <e p="Texture2DExtension.cs" t="Include" />
+      </e>
+      <e p="INFO.txt" t="Include" />
+      <e p="IrregularEngine" t="Include">
+        <e p="Data" t="Include">
+          <e p="EngineActionType.cs" t="Include" />
+          <e p="EngineDirection.cs" t="Include" />
+          <e p="EngineGlyphType.cs" t="Include" />
+          <e p="EngineOperatorType.cs" t="Include" />
+        </e>
+        <e p="EngineScreen.cs" t="Include" />
+        <e p="EngineScreenBuilder.cs" t="Include" />
+        <e p="EngineTile.cs" t="Include" />
+        <e p="Parser" t="Include">
+          <e p="EngineParser.cs" t="Include" />
+          <e p="EngineParserState.cs" t="Include" />
+          <e p="Handlers" t="Include">
+            <e p="StateParser_Action.cs" t="Include" />
+            <e p="StateParser_Cameleon.cs" t="Include" />
+            <e p="StateParser_Ignore.cs" t="Include" />
+            <e p="StateParser_Invert.cs" t="Include" />
+            <e p="StateParser_Multiply.cs" t="Include" />
+            <e p="StateParser_Nothing.cs" t="Include" />
+            <e p="StateParser_Numeral.cs" t="Include" />
+            <e p="StateParser_Subtract.cs" t="Include" />
+          </e>
+          <e p="ParserPosition.cs" t="Include" />
+          <e p="StateParserUtils.cs" t="Include" />
+        </e>
+        <e p="Serializer" t="Include">
+          <e p="EngineSerializerGlyphs.cs" t="Include" />
+          <e p="EngineTilesUnserializer.cs" t="Include" />
+        </e>
+      </e>
+      <e p="IrregularMachine.csproj" t="IncludeRecursive" />
+      <e p="IrregularMachine.sln" t="IncludeFlat" />
+      <e p="LICENSE.txt" t="Include" />
+      <e p="logs" t="Include">
+        <e p="2018-02-11_20-20-35-1412.txt" t="Include" />
+        <e p="2018-02-11_20-21-04-6268.txt" t="Include" />
+      </e>
+      <e p="Main.cs" t="Include" />
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp2.0" t="Include">
+            <e p="IrregularMachine.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Scenes" t="Include">
+        <e p="Ingame" t="Include">
+          <e p="IngameScene.cs" t="Include" />
+          <e p="IngameScreen.cs" t="Include" />
+          <e p="ScreensCollection.cs" t="Include" />
+        </e>
+        <e p="InMemoriam" t="Include">
+          <e p="InMemoriamScene.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Utils" t="Include">
+        <e p="MathUtils.cs" t="Include" />
+      </e>
+    </e>
+    <e p="C:\Users\Kami\.Rider2017.3\system\resharper-host\local\Transient\ReSharperHost\v11\SolutionCaches\_IrregularMachine.-964315568.00" t="ExcludeRecursive" />
+  </component>
+</project>

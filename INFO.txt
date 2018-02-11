@@ -1,0 +1,28 @@
+Lista glifów co robią:
+
+11-18 - Akcje kierunkowe (w sterowaniu będą to liczby na numpadzie 1-9 z pominięciem 5, lub przyciski QWE AD ZXC dla tych co nie mają numpada)
+10 - Akcja specjalna (numpad 5 lub S)
+
+Liczby. W przykłaodwych glifach są mocno zbyt podobne do siebie, wydaje mi się, że nie ma co utrudniać życia za bardzo więc bym zrobić coś, co by jednoznacznie wskazywało "to jest liczba" ale jednocześnie powiny być rózne od siebie na tyle by dało się szybko czytać
+20 - Liczba 1
+21 - Liczba 2
+22 - Liczba 4
+23 - Liczba 8
+
+Kameleon:
+30-37 - Kameleon przyjmuje akcje glifu na który patrzy, w ośmiu kierunkach
+
+Operacje matematyczne. Nie ma dzielenia i dodawania, ponieważ dodawanie jest domyślne przy liczbach, a dzielenie powstaje przez inwersje mnożenia innym glifem
+40 - Mnożenie
+41 - Odejmowanie
+
+Modyfikatory.
+50 - Inwersja następnego glifu. Odejmowanie staje się dodawaniem, mnożenie dzieleniem, akcja kierunkowa przyjmuje przeciwny kierunek
+51 - Ignorowanie następnego glifu, nieważne od tego jaki by był
+
+GOTO/Nawiasy. Lewe nie robią same w sobie nic, prawe cofają Cię do najbliższego lewego nawiasu jaki mogą znaleźć, działają tylko raz.
+60, 62, 64 - Lewe nawiasy
+61, 63, 65 - Prawe nawiasy
+
+Bomba. Po dotarciu na ten glif powoduje zmianę stanu planszy usuwając wszystkie glify w odległości 1-3 pól
+70-72 - Bomba
