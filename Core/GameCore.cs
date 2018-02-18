@@ -1,9 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using IrregularMachine.Extensions;
+using IrregularMachine.IrregularEngine;
+using IrregularMachine.IrregularEngine.Data;
+using IrregularMachine.IrregularEngine.Parser;
+using IrregularMachine.IrregularEngine.Serializer;
 using IrregularMachine.Scenes.Ingame;
 using IrregularMachine.Scenes.InMemoriam;
 using IrregularMachine.Scenes.Intro;
+using IrregularMachine.Scenes.Outro;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -62,21 +68,24 @@ namespace IrregularMachine.Core {
         }
 
         private void StartGame() {
+            _graphics.IsFullScreen = true;
+            _graphics.HardwareModeSwitch = false;
+            _graphics.ApplyChanges();
+            
             Save.LoadSave();
-            Sfx.MusicInstance.Volume = Save.MusicVolume;
-            Sfx.MusicInstance.Play();
-//            SceneManager = new SceneManager(new InMemoriamScene());
-//            SceneManager = new SceneManager(new IntroScene());
-            SceneManager = new SceneManager(new IngameScene());
+
+            if (Save.LastLevel == S.LastLevelIndex) {
+                SceneManager = new SceneManager(new OutroScene());                
+            }
+            else {
+                Sfx.MusicInstance.Volume = Save.MusicVolume;
+                Sfx.MusicInstance.Play();
+                SceneManager = new SceneManager(new InMemoriamScene());                
+            }
+            
         }
 
         protected override void Update(GameTime gameTime) {
-            if (KeyboardManager.Instance.IsKeyJustPressed(Keys.F11)) {
-                _graphics.IsFullScreen = true;
-                _graphics.HardwareModeSwitch = false;
-                _graphics.ApplyChanges();
-            }
-
             if (ShakePower > 0) {
                 ShakePower -= 0.1f;
             }

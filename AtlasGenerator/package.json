@@ -1,0 +1,11 @@
+{
+  "name": "Monstro",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "devDependencies": {
+    "spritesmith": "3.3.0"
+  }
+}

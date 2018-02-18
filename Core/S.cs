@@ -2,6 +2,7 @@
 
 namespace IrregularMachine.Core {
     public static class S {
+        public const int LastLevelIndex = 65;
         public const int ViewportWidth = 1920;
         public const int ViewportHeight = 1080;
         public const float ViewportRatio = (float)ViewportWidth / ViewportHeight;

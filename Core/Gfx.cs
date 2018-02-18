@@ -13,11 +13,14 @@ namespace IrregularMachine.Core {
         public static Texture2D txt_InMemory { get; private set; }
         public static Texture2D bg_Backgorund { get; private set; }
         public static Texture2D sheet_font { get; private set; }
+        public static Texture2D sheet_fontOutlined { get; private set; }
         public static Texture2D bg_InputFrame { get; private set; }
-        public static Texture2D Controls { get; private set; }
+        public static Texture2D ControlsLeft { get; private set; }
+        public static Texture2D ControlsRight { get; private set; }
         public static Texture2D Black { get; private set; }
 
         public static BitmapFont BitmapFont { get; private set; }
+        public static BitmapFont BitmapFontOutline { get; private set; }
         
         public static TextureAtlas sheet_Ingame { get; private set; }
         public static TextureAtlas sheet_Particles { get; private set; }
@@ -28,6 +31,10 @@ namespace IrregularMachine.Core {
             Logger.Init($"Loading intro texture '{index}'");
             return LoadTexture(_contentManager, $"intro_{index + 1}");
         }
+        public static Texture2D LoadOutroTexture() {
+            Logger.Init("Loading outro texture");
+            return LoadTexture(_contentManager, "outro");
+        }
         
         public static void Load(ContentManager content) {
             Logger.Init("Loading GFX assets");
@@ -37,10 +44,13 @@ namespace IrregularMachine.Core {
             txt_InMemory = LoadTexture(content, "txt_InMemory");
             bg_Backgorund = LoadTexture(content, "bg_1");
             bg_InputFrame = LoadTexture(content, "bg_inputframe");
-            Controls = LoadTexture(content, "Controls");
+            ControlsLeft = LoadTexture(content, "ControlsLeft");
+            ControlsRight = LoadTexture(content, "ControlsRight");
             Black = LoadTexture(content, "Black");
             sheet_font = LoadTexture(content, "sheet_font");
+            sheet_fontOutlined = LoadTexture(content, "sheet_fontOutlined");
             BitmapFont = BitmapFontLoaderBmFontText.LoadFont(new FileInfo("Content/sheet_font.fnt"), sheet_font);
+            BitmapFontOutline = BitmapFontLoaderBmFontText.LoadFont(new FileInfo("Content/sheet_font.fnt"), sheet_fontOutlined);
             sheet_Ingame = new TextureAtlas(
                 LoadTexture(content, "sheet_glyphs"),
                 File.ReadAllLines("Content/sheet_glyphs.txt")

@@ -1,0 +1,5 @@
+particle_dust|0|0|256|256
+particle_rock1|256|0|132|167
+particle_rock2|0|256|82|145
+particle_rock3|388|136|101|89
+particle_rock4|388|0|112|136

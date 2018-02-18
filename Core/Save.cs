@@ -35,6 +35,8 @@ namespace IrregularMachine.Core {
                     SoundVolume = reader.ReadSingle();
                     VoiceOverVolume = reader.ReadSingle();
                 }
+
+                LastLevel--;
             }
             catch (Exception) {
                 // Ignore

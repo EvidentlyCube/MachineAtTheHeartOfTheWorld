@@ -8,8 +8,10 @@ namespace IrregularMachine.IrregularEngine.Parser.Handlers {
 
             tile.TimesAccessed++;
             state.Position.MoveForward();
-            StateParserUtils.SkipEmptyTiles(state);
-            state.Position.MoveForward();
+            if (!state.GetAndFlushInverting()) {
+                StateParserUtils.SkipEmptyTiles(state);                
+                state.Position.MoveForward();
+            }
         }
     }
 }

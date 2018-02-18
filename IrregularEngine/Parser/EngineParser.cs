@@ -42,12 +42,8 @@ namespace IrregularMachine.IrregularEngine.Parser {
                 {EngineGlyphType.SpecialCameleonW, StateParser_Cameleon.ParseTile},
                 {EngineGlyphType.SpecialCameleonNW, StateParser_Cameleon.ParseTile},
                 {EngineGlyphType.Bomb, StateParser_Bomb.ParseTile},
-                {EngineGlyphType.SlicerAStart, StateParser_Nothing.ParseTile},
-                {EngineGlyphType.SlicerAEnd, StateParser_Nothing.ParseTile},
-                {EngineGlyphType.SlicerBStart, StateParser_Nothing.ParseTile},
-                {EngineGlyphType.SlicerBEnd, StateParser_Nothing.ParseTile}, // Todo add parser
-                {EngineGlyphType.SlicerCStart, StateParser_Nothing.ParseTile},
-                {EngineGlyphType.SlicerCEnd, StateParser_Nothing.ParseTile},
+                {EngineGlyphType.SlicerStart, StateParser_Slicer.ParseTile},
+                {EngineGlyphType.SlicerEnd, StateParser_Slicer.ParseTile}
             };
         }
 

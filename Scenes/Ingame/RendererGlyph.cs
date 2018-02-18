@@ -87,12 +87,8 @@ namespace IrregularMachine.Scenes.Ingame {
                 case EngineGlyphType.OperationSubtract: return CogBladed;
                 case EngineGlyphType.ModifierInvert: return CogShort;
                 case EngineGlyphType.ModifierIgnore: return CogShort;
-                case EngineGlyphType.SlicerAStart: return CogThick;
-                case EngineGlyphType.SlicerAEnd: return CogThick;
-                case EngineGlyphType.SlicerBStart: return CogThick;
-                case EngineGlyphType.SlicerBEnd: return CogThick;
-                case EngineGlyphType.SlicerCStart: return CogThick;
-                case EngineGlyphType.SlicerCEnd: return CogThick;
+                case EngineGlyphType.SlicerStart: return CogThick;
+                case EngineGlyphType.SlicerEnd: return CogThick;
                 case EngineGlyphType.Bomb: return CogHalf;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(glyphType), glyphType, null);
@@ -126,12 +122,8 @@ namespace IrregularMachine.Scenes.Ingame {
                 case EngineGlyphType.OperationSubtract: return PlateCircle;
                 case EngineGlyphType.ModifierInvert: return PlatePentagon;
                 case EngineGlyphType.ModifierIgnore: return PlatePentagon;
-                case EngineGlyphType.SlicerAStart: return PlateDeltoid;
-                case EngineGlyphType.SlicerAEnd: return PlateDeltoid;
-                case EngineGlyphType.SlicerBStart: return PlateDeltoid;
-                case EngineGlyphType.SlicerBEnd: return PlateDeltoid;
-                case EngineGlyphType.SlicerCStart: return PlateDeltoid;
-                case EngineGlyphType.SlicerCEnd: return PlateDeltoid;
+                case EngineGlyphType.SlicerStart: return PlateDeltoid;
+                case EngineGlyphType.SlicerEnd: return PlateDeltoid;
                 case EngineGlyphType.Bomb: return PlateHexagon;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(glyphType), glyphType, null);

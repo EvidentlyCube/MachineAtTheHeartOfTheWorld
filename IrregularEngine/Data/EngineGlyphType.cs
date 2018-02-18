@@ -36,12 +36,8 @@ namespace IrregularMachine.IrregularEngine.Data {
         ModifierInvert = 50,
         ModifierIgnore = 51,
 
-        SlicerAStart = 60,
-        SlicerAEnd = 61,
-        SlicerBStart = 62,
-        SlicerBEnd = 63,
-        SlicerCStart = 64,
-        SlicerCEnd = 65,
+        SlicerStart = 64,
+        SlicerEnd = 65,
         
         Bomb = 70
     }
@@ -70,6 +66,10 @@ namespace IrregularMachine.IrregularEngine.Data {
         }
         public static bool IsAction(this EngineGlyphType element) {
             return element.IsMoveAction() || element == EngineGlyphType.ActionSpecial;
+        }
+        
+        public static bool IsSlicer(this EngineGlyphType element) {
+            return element == EngineGlyphType.SlicerStart || element == EngineGlyphType.SlicerEnd;
         }
         
         public static bool IsBomb(this EngineGlyphType element) {

@@ -11,9 +11,9 @@ namespace IrregularMachine.Core {
                 Directory.CreateDirectory("logs");
             }
 
-            var fileName = "logs/" + DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss-ffff") + ".txt";
-            _fileStream = new FileStream(fileName, FileMode.Create, FileAccess.Write);
-            _fileStreamWriter = new StreamWriter(_fileStream);
+//            var fileName = "logs/" + DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss-ffff") + ".txt";
+//            _fileStream = new FileStream(fileName, FileMode.Create, FileAccess.Write);
+//            _fileStreamWriter = new StreamWriter(_fileStream);
         }
         
         public static void Init(string text) {
@@ -35,9 +35,9 @@ namespace IrregularMachine.Core {
         private static void Log(string text) {
             text = $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss.ffff}] {text}";
             Console.WriteLine(text);
-            _fileStreamWriter.Write(text);
-            _fileStreamWriter.Write('\n');
-            _fileStreamWriter.Flush();
+//            _fileStreamWriter.Write(text);
+//            _fileStreamWriter.Write('\n');
+//            _fileStreamWriter.Flush();
         }
     }
 }

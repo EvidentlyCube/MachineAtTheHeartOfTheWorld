@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Runtime.CompilerServices;
+using System.Xml.Schema;
 using IrregularMachine.Core;
+using IrregularMachine.Scenes.Ingame.Widgets;
 using IrregularMachine.Utils;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -12,7 +16,10 @@ namespace IrregularMachine.Scenes.Ingame {
         private readonly ReadOnlyCollection<IngameScreen> _screens;
         private float _currentScreenRenderOffset;
         private int _currentlySelectedScreen;
-        private PauseView _pauseView;
+        private readonly PauseView _pauseView;
+        private readonly ControlsWidget _controlsWidget;
+        private readonly CreditsWidget _creditsWidget;
+        public readonly SubtitleWidget SubtitleWidget;
 
         private readonly LevelProceedBlockEffect _levelProceedBlockEffect;
         private float RenderOffset => _currentScreenRenderOffset + _levelProceedBlockEffect.Offset;
@@ -22,14 +29,13 @@ namespace IrregularMachine.Scenes.Ingame {
 
         private int _walkSfxTimeout;
 
-        private float _controlsAlpha = 1f;
 
         public IngameScene() {
             var engineScreens = ScreensCollection.GetScreens();
             Logger.Debug($"Loaded '{engineScreens.Count}' screens");
             var ingameScreens = new List<IngameScreen>(engineScreens.Count);
             for (var i = 0; i < engineScreens.Count; i++) {
-                ingameScreens.Add(new IngameScreen(i, engineScreens[i].EgineScreen, engineScreens[i].Messages));
+                ingameScreens.Add(new IngameScreen(this, i, engineScreens[i].EgineScreen, engineScreens[i].Messages));
             }
 
             for (var i = 0; i < Save.LastLevel; i++) {
@@ -42,6 +48,14 @@ namespace IrregularMachine.Scenes.Ingame {
                 
             _levelProceedBlockEffect = new LevelProceedBlockEffect();
             _pauseView = new PauseView();
+
+            _controlsWidget = new ControlsWidget {IsHiding = Save.LastLevel > 1};
+            _creditsWidget = new CreditsWidget();
+            SubtitleWidget = new SubtitleWidget();
+
+            if (Save.LastLevel > 0) {
+                _creditsWidget.IsFinished = true;
+            }
         }
 
         public void OnSet() {
@@ -71,6 +85,10 @@ namespace IrregularMachine.Scenes.Ingame {
             }
             
             _levelProceedBlockEffect.Update();
+
+            if (_screens[_currentlySelectedScreen].IsCompleted) {
+                _creditsWidget.IsRunning = true;
+            }
             
             if (KeyboardManager.Instance.IsKeyJustPressed(Keys.Left)) {
                 Logger.Input("Switching screen to the left");
@@ -93,11 +111,10 @@ namespace IrregularMachine.Scenes.Ingame {
                 ingameScreen.Update(RenderOffset, true);
             }
 
-            if (_currentlySelectedScreen > 1 || _controlsAlpha < 1) {
-                if (_controlsAlpha > 0) {
-                    _controlsAlpha -= 0.01f;
-                }
-            }
+            _controlsWidget.Update();
+            _creditsWidget.Update();
+            SubtitleWidget.Update();
+            _controlsWidget.IsHiding = _controlsWidget.IsHiding || _currentlySelectedScreen > 1;
         }
 
         public void Draw(SpriteBatch batch) {
@@ -114,10 +131,10 @@ namespace IrregularMachine.Scenes.Ingame {
                 ingameScreen.Draw(RenderOffset, batch);
             }
 
-            if (_controlsAlpha > 0) {
-                batch.Draw(Gfx.Controls, new Vector2(40, S.ViewportHeight - 40 - Gfx.Controls.Height), new Color(1f, 1f, 1f, _controlsAlpha));
-            }
-            
+            _controlsWidget.Draw(batch);
+            _creditsWidget.Draw(batch);
+            SubtitleWidget.Draw(batch);
+      
             _pauseView.Draw(batch);
             
             batch.End();

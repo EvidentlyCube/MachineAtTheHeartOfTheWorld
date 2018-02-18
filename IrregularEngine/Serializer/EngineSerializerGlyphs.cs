@@ -32,12 +32,8 @@ namespace IrregularMachine.IrregularEngine.Serializer {
         public const string OperationSubtract = "O-";
         public const string ModifierInvert = "O!";
         public const string ModifierIgnore = "OI";
-        public const string SlicerAStart = "(1";
-        public const string SlicerAEnd = "1)";
-        public const string SlicerBStart = "(2";
-        public const string SlicerBEnd = "2)";
-        public const string SlicerCStart = "(3";
-        public const string SlicerCEnd = "3)";
+        public const string SlicerStart = "((";
+        public const string SlicerEnd = "))";
         public const string BombRange1 = "B1";
 
         public static readonly IReadOnlyDictionary<string, EngineGlyphType> StringToGlyphMap;
@@ -72,12 +68,8 @@ namespace IrregularMachine.IrregularEngine.Serializer {
             stringToGlyphMap[OperationSubtract] = EngineGlyphType.OperationSubtract;
             stringToGlyphMap[ModifierInvert] = EngineGlyphType.ModifierInvert;
             stringToGlyphMap[ModifierIgnore] = EngineGlyphType.ModifierIgnore;
-            stringToGlyphMap[SlicerAStart] = EngineGlyphType.SlicerAStart;
-            stringToGlyphMap[SlicerAEnd] = EngineGlyphType.SlicerAEnd;
-            stringToGlyphMap[SlicerBStart] = EngineGlyphType.SlicerBStart;
-            stringToGlyphMap[SlicerBEnd] = EngineGlyphType.SlicerBEnd;
-            stringToGlyphMap[SlicerCStart] = EngineGlyphType.SlicerCStart;
-            stringToGlyphMap[SlicerCEnd] = EngineGlyphType.SlicerCEnd;
+            stringToGlyphMap[SlicerStart] = EngineGlyphType.SlicerStart;
+            stringToGlyphMap[SlicerEnd] = EngineGlyphType.SlicerEnd;
             stringToGlyphMap[BombRange1] = EngineGlyphType.Bomb;
             
             foreach (var key in stringToGlyphMap.Keys) {

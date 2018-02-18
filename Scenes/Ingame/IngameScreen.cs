@@ -9,6 +9,7 @@ using IrregularMachine.IrregularEngine;
 using IrregularMachine.IrregularEngine.Data;
 using IrregularMachine.IrregularEngine.Parser;
 using IrregularMachine.Scenes.Ingame.particles;
+using IrregularMachine.Scenes.Outro;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
@@ -17,7 +18,6 @@ using Color = Microsoft.Xna.Framework.Color;
 
 namespace IrregularMachine.Scenes.Ingame {
     public class IngameScreen {
-        private EngineScreen _engineScreen;
         private readonly float _renderOffset;
 
         public bool IsCompleted { get; private set; }
@@ -32,12 +32,10 @@ namespace IrregularMachine.Scenes.Ingame {
         private readonly List<ParticleStone> _stoneParticles;
         private readonly List<IngameScreenMessage> _messages;
 
-        private bool _wasMessageStarted;
-        private readonly TweenSequence _messagePlayerTween;
-        private readonly BitmapText _subtitleText;
+        private readonly IngameScene _scene;
 
-        public IngameScreen(float renderOffset, EngineScreen engineScreen, IngameScreenMessage[] messages) {
-            _engineScreen = engineScreen ?? throw new ArgumentNullException(nameof(engineScreen));
+        public IngameScreen(IngameScene scene, float renderOffset, EngineScreen engineScreen, IngameScreenMessage[] messages) {
+            _scene = scene;
             _renderOffset = renderOffset;
             _actionBrickRenders = new List<RendererActionBrick>();
             _glyphRenderers = new List<RendererGlyph>();
@@ -45,24 +43,6 @@ namespace IrregularMachine.Scenes.Ingame {
             _stoneParticles = new List<ParticleStone>();
             _messages = new List<IngameScreenMessage>(messages);
             IsCompleted = false;
-
-            if (_messages.Count > 0) {
-                _subtitleText = new BitmapText(Gfx.BitmapFont, new SizeF(S.ViewportWidth, 300));
-                _subtitleText.FontScale = 0.75f;
-                _subtitleText.HorizontalAlign = BitmapTextHorizontalAlign.Center;
-                _subtitleText.VerticalAlign = BitmapTextVerticalAlign.Middle;
-                _subtitleText.Position = new PointF(0, S.ViewportHeight - _subtitleText.Height);
-                
-                _messagePlayerTween = new TweenSequence();
-                _messagePlayerTween.AddTween(new TweenSleep(120));
-                foreach (var ingameScreenMessage in messages) {
-                    _messagePlayerTween.AddTween(new TweenCallback(GetVoiceOverPlayAction(ingameScreenMessage.VoiceOver)));
-                    _messagePlayerTween.AddTween(new TweenCallback(GetSetTextAction(ingameScreenMessage.Text)));
-                    _messagePlayerTween.AddTween(new TweenSleep(ingameScreenMessage.VoiceOver?.Duration.Seconds * 61 ?? 180));
-                }
-                _messagePlayerTween.AddTween(new TweenCallback(GetSetTextAction("")));
-            }
-            
 
             var parser = new EngineParser(engineScreen.Tiles);
             _solution = parser.Parse();
@@ -89,14 +69,15 @@ namespace IrregularMachine.Scenes.Ingame {
             _stoneParticles.ForEach(x => x.Update());
             _stoneParticles.RemoveAll(x => x.IsFinished);
             
-            if (_wasMessageStarted)
-                _messagePlayerTween?.Update();
-
             if (Math.Abs(sceneOffset - _renderOffset) >= 0.5 || !controlsEnabled) {
                 return;
             }
 
-            _wasMessageStarted = true;
+            if (_messages.Count > 0) {
+                _scene.SubtitleWidget.AddDelay();
+                _messages.ForEach(message => _scene.SubtitleWidget.AddSubtitle(message.Text, message.VoiceOver));
+                _messages.Clear();
+            }
 
             for (var i = 0; i < _actionBrickRenders.Count; i++) {
                 _actionBrickRenders[i].Update(_actionBrickRenders.Count, i);
@@ -116,6 +97,14 @@ namespace IrregularMachine.Scenes.Ingame {
 
             if (KeyboardManager.Instance.IsKeyJustPressed(Keys.Enter) && !_isHiding) {
                 if (CompareLists(_actionBrickRenders, _solution)) {
+                    if (_renderOffset == S.LastLevelIndex) {
+                        Save.LastLevel = S.LastLevelIndex + 1;
+                        Save.WriteSave();
+                        Sfx.MusicInstance.Stop();
+                        GameCore.Instance.SceneManager.SetScene(new OutroSmackScene());
+                        return;
+                    }
+                    
                     IsCompleted = true;
                     GameCore.Instance.ShakePower += 2;
                     _smokeParticles.Add(new ParticleSmoke());
@@ -141,7 +130,7 @@ namespace IrregularMachine.Scenes.Ingame {
                     _stoneParticles.Add(new ParticleStone());
                     _stoneParticles.Add(new ParticleStone());
                     Sfx.PlayLevelCompleted();
-                    Save.LastLevel++;
+                    Save.LastLevel = (int)_renderOffset + 2;
                     Save.WriteSave();
                 }
                 else {    
@@ -185,8 +174,6 @@ namespace IrregularMachine.Scenes.Ingame {
                 _stoneParticles.ForEach(x => x.Draw(batch, offsetX));
                 batch.Draw(Gfx.bg_InputFrame, new Vector2(S.InputFrameX + offsetX, S.InputFrameY), Color.White);
             }
-            
-            _subtitleText?.Draw(batch);
         }
 
         private bool CompareLists(List<RendererActionBrick> left, List<EngineActionType> right) {
@@ -248,13 +235,6 @@ namespace IrregularMachine.Scenes.Ingame {
 
         private Action GetSfxReverseSoundAction(EngineActionType actionType) {
             return () => Sfx.PlayGlassReverseSound(actionType);
-        }
-
-        private Action GetVoiceOverPlayAction(SoundEffect voiceOver) {
-            return () => voiceOver?.Play();
-        }
-        private Action GetSetTextAction(string text) {
-            return () => _subtitleText.Text = text;
         }
 
         public void MarkDone() {
