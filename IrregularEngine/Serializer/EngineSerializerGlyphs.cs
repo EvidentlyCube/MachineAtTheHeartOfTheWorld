@@ -39,8 +39,6 @@ namespace IrregularMachine.IrregularEngine.Serializer {
         public const string SlicerCStart = "(3";
         public const string SlicerCEnd = "3)";
         public const string BombRange1 = "B1";
-        public const string BombRange2 = "B2";
-        public const string BombRange3 = "B3";
 
         public static readonly IReadOnlyDictionary<string, EngineGlyphType> StringToGlyphMap;
         public static readonly IReadOnlyDictionary<EngineGlyphType, string> GlyphToStringMap;
@@ -80,9 +78,7 @@ namespace IrregularMachine.IrregularEngine.Serializer {
             stringToGlyphMap[SlicerBEnd] = EngineGlyphType.SlicerBEnd;
             stringToGlyphMap[SlicerCStart] = EngineGlyphType.SlicerCStart;
             stringToGlyphMap[SlicerCEnd] = EngineGlyphType.SlicerCEnd;
-            stringToGlyphMap[BombRange1] = EngineGlyphType.BombRange1;
-            stringToGlyphMap[BombRange2] = EngineGlyphType.BombRange2;
-            stringToGlyphMap[BombRange3] = EngineGlyphType.BombRange3;
+            stringToGlyphMap[BombRange1] = EngineGlyphType.Bomb;
             
             foreach (var key in stringToGlyphMap.Keys) {
                 var glyph = stringToGlyphMap[key];

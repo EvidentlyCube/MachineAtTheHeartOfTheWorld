@@ -1,6 +1,10 @@
 ﻿using IrregularMachine.Core;
+using IrregularMachine.Core.Tweens;
+using IrregularMachine.Scenes.Ingame;
+using IrregularMachine.Scenes.Intro;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 
 namespace IrregularMachine.Scenes.InMemoriam {
     public class InMemoriamScene : IScene {
@@ -21,22 +25,35 @@ namespace IrregularMachine.Scenes.InMemoriam {
             _textColor.A = 0;
             
             _tween.Clear();
-            _tween.AddTween(new Tween(0, 0, PreWaitDuration));
-            _tween.AddTween(new Tween(0, 255, FadeDuration, v => _textColor.A = (byte)v));
-            _tween.AddTween(new Tween(0, 0, WaitDuration));
-            _tween.AddTween(new Tween(255, 0, FadeDuration, v => _textColor.A = (byte)v));
-            _tween.AddTween(new Tween(0, 0, PostWaitDuration));
+            _tween.AddTween(new TweenFloat(0, 0, PreWaitDuration));
+            _tween.AddTween(new TweenFloat(0, 255, FadeDuration, v => _textColor.A = (byte)v));
+            _tween.AddTween(new TweenFloat(0, 0, WaitDuration));
+            _tween.AddTween(new TweenFloat(255, 0, FadeDuration, v => _textColor.A = (byte)v));
+            _tween.AddTween(new TweenFloat(0, 0, PostWaitDuration));
         }
 
         public void OnUnset() {
         }
 
         private void AfterTweenFinished() {
-            
+            GameCore.Instance.SceneManager.SetScene(new IntroScene());
         }
         
         public void Update() {
-            _tween.Update();
+            if (KeyboardManager.Instance.IsKeyDown(Keys.Escape)) {
+                GameCore.Instance.SceneManager.SetScene(new IngameScene());                
+            } else if (KeyboardManager.Instance.IsKeyDown(Keys.Space)) {
+                _tween.GoToNext();
+                _tween.GoToNext();
+                _tween.GoToNext();
+                _tween.GoToNext();
+                _tween.GoToNext();
+                _tween.GoToNext();
+                _tween.GoToNext();
+            }
+            else {
+                _tween.Update();                
+            }
         }
 
         public void Draw(SpriteBatch batch) {

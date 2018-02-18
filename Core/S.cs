@@ -1,46 +1,29 @@
-﻿using System;
-using System.IO;
+﻿using Microsoft.Xna.Framework;
 
 namespace IrregularMachine.Core {
     public static class S {
-        public static readonly int ViewportWidth = 1920;
-        public static readonly int ViewportHeight = 1080;
-        public static readonly float ViewportRatio = 0f;
-        public static readonly int GlyphAreaWidth = 850;
-        public static readonly int GlyphAreaHeight = 630;
-        public static readonly int GlyphAreaMonitorOffsetX = 180;
-        public static readonly int GlyphAreaMonitorOffsetY = 223;
-        
-        public static readonly int GlyphMaxEdgeRenderSize = 256;
-        public static readonly int GlyphImageEdge = GlyphMaxEdgeRenderSize;
+        public const int ViewportWidth = 1920;
+        public const int ViewportHeight = 1080;
+        public const float ViewportRatio = (float)ViewportWidth / ViewportHeight;
+        public const int GlyphAreaWidth = 864;
+        public const int GlyphAreaHeight = 720;
+        public const int GlyphAreaMonitorOffsetX = 531;
+        public const int GlyphAreaMonitorOffsetY = 124;
 
-        static S() {
-            Logger.Init("Loading constants");
-            var lines = File.ReadAllLines("Content/constants.txt");
+        public const int InputFrameX = 491;
+        public const int InputFrameY = 872;
 
-            foreach (var line in lines) {
-                var chunks = line.Split('=');
-                if (chunks.Length != 2) {
-                    continue;
-                }
+        public const int ActionGlassLeftmostX = 528;
+        public const int ActionGlassLeftmostY = 903;
+        public const int ActionGlassSpacing = 6;
 
-                var chunkInteger = int.Parse(chunks[1]);
+        public static readonly Rectangle ActionInputClippingRectangle =
+            new Rectangle(InputFrameX + 10, InputFrameY + 10, 916, 141);
 
-                Logger.Init($"Setting '{chunks[0]}' to '{chunks[1]}'");
-                
-                switch (chunks[0]) {
-                    case "ViewportWidth": ViewportWidth = chunkInteger; break;
-                    case "ViewportHeight": ViewportHeight = chunkInteger; break;
-                    case "GlyphAreaWidth": GlyphAreaWidth = chunkInteger; break;
-                    case "GlyphAreaHeight": GlyphAreaHeight = chunkInteger; break;
-                    case "GlyphAreaMonitorOffsetX": GlyphAreaMonitorOffsetX = chunkInteger; break;
-                    case "GlyphAreaMonitorOffsetY": GlyphAreaMonitorOffsetY = chunkInteger; break;
-                    case "GlyphMaxEdgeRenderSize": GlyphMaxEdgeRenderSize = chunkInteger; break;
-                    case "GlyphImageEdge": GlyphImageEdge = chunkInteger; break;
-                }
-            }
+        public const int GlyphImageEdge = 144;
+        public const int GlyphCogSize = 188;
+        public const int GlyphCogOffset = (GlyphCogSize - GlyphImageEdge) / 2;
 
-            ViewportRatio = (float) ViewportWidth / ViewportHeight;
-        }
+        public const int MaxActionsInLevel = 9;
     }
 }

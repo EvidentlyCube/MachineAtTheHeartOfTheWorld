@@ -2,150 +2,122 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Dropbox (Retrocade.net)\Projects\IrregularMachine\IrregularMachine" t="IncludeRecursive">
+      <e p="AtlasGenerator" t="Include">
+        <e p="package-lock.json" t="Include" />
+        <e p="package.json" t="Include" />
+        <e p="PackTextures.js" t="Include" />
+      </e>
       <e p="bin" t="ExcludeRecursive" />
+      <e p="BitmapTexts" t="Include">
+        <e p="BitmapFont.cs" t="Include" />
+        <e p="BitmapFontCharacter.cs" t="Include" />
+        <e p="BitmapFontLoaderBmFontText.cs" t="Include" />
+        <e p="BitmapText.cs" t="Include" />
+        <e p="BitmapTextHorizontalAlign.cs" t="Include" />
+        <e p="BitmapTextLine.cs" t="Include" />
+        <e p="BitmapTextTools.cs" t="Include" />
+        <e p="BitmapTextTuple.cs" t="Include" />
+        <e p="BitmapTextVerticalAlign.cs" t="Include" />
+      </e>
       <e p="Content" t="Include">
-        <e p="bg_1.jpg" t="Include" />
-        <e p="bg_monitor.png" t="Include" />
-        <e p="bin" t="Include">
-          <e p="${Platform}" t="Include">
-            <e p="bg_1.jpg" t="Include" />
-            <e p="bg_monitor.png" t="Include" />
-            <e p="constants.txt" t="Include" />
-            <e p="glyph_10.png" t="Include" />
-            <e p="glyph_11.png" t="Include" />
-            <e p="glyph_12.png" t="Include" />
-            <e p="glyph_13.png" t="Include" />
-            <e p="glyph_14.png" t="Include" />
-            <e p="glyph_15.png" t="Include" />
-            <e p="glyph_16.png" t="Include" />
-            <e p="glyph_17.png" t="Include" />
-            <e p="glyph_18.png" t="Include" />
-            <e p="glyph_20.png" t="Include" />
-            <e p="glyph_21.png" t="Include" />
-            <e p="glyph_22.png" t="Include" />
-            <e p="glyph_23.png" t="Include" />
-            <e p="glyph_30.png" t="Include" />
-            <e p="glyph_31.png" t="Include" />
-            <e p="glyph_32.png" t="Include" />
-            <e p="glyph_33.png" t="Include" />
-            <e p="glyph_34.png" t="Include" />
-            <e p="glyph_35.png" t="Include" />
-            <e p="glyph_36.png" t="Include" />
-            <e p="glyph_37.png" t="Include" />
-            <e p="glyph_40.png" t="Include" />
-            <e p="glyph_41.png" t="Include" />
-            <e p="glyph_50.png" t="Include" />
-            <e p="glyph_51.png" t="Include" />
-            <e p="glyph_60.png" t="Include" />
-            <e p="glyph_61.png" t="Include" />
-            <e p="glyph_62.png" t="Include" />
-            <e p="glyph_63.png" t="Include" />
-            <e p="glyph_64.png" t="Include" />
-            <e p="glyph_65.png" t="Include" />
-            <e p="glyph_70.png" t="Include" />
-            <e p="glyph_71.png" t="Include" />
-            <e p="glyph_72.png" t="Include" />
-            <e p="txt_InMemory.png" t="Include" />
-          </e>
-          <e p="DesktopGL" t="Include">
-            <e p="Content" t="Include">
-              <e p="bg_1.jpg" t="Include" />
-              <e p="bg_monitor.png" t="Include" />
-              <e p="constants.txt" t="Include" />
-              <e p="glyph_10.png" t="Include" />
-              <e p="glyph_11.png" t="Include" />
-              <e p="glyph_12.png" t="Include" />
-              <e p="glyph_13.png" t="Include" />
-              <e p="glyph_14.png" t="Include" />
-              <e p="glyph_15.png" t="Include" />
-              <e p="glyph_16.png" t="Include" />
-              <e p="glyph_17.png" t="Include" />
-              <e p="glyph_18.png" t="Include" />
-              <e p="glyph_20.png" t="Include" />
-              <e p="glyph_21.png" t="Include" />
-              <e p="glyph_22.png" t="Include" />
-              <e p="glyph_23.png" t="Include" />
-              <e p="glyph_30.png" t="Include" />
-              <e p="glyph_31.png" t="Include" />
-              <e p="glyph_32.png" t="Include" />
-              <e p="glyph_33.png" t="Include" />
-              <e p="glyph_34.png" t="Include" />
-              <e p="glyph_35.png" t="Include" />
-              <e p="glyph_36.png" t="Include" />
-              <e p="glyph_37.png" t="Include" />
-              <e p="glyph_40.png" t="Include" />
-              <e p="glyph_41.png" t="Include" />
-              <e p="glyph_50.png" t="Include" />
-              <e p="glyph_51.png" t="Include" />
-              <e p="glyph_60.png" t="Include" />
-              <e p="glyph_61.png" t="Include" />
-              <e p="glyph_62.png" t="Include" />
-              <e p="glyph_63.png" t="Include" />
-              <e p="glyph_64.png" t="Include" />
-              <e p="glyph_65.png" t="Include" />
-              <e p="glyph_70.png" t="Include" />
-              <e p="glyph_71.png" t="Include" />
-              <e p="glyph_72.png" t="Include" />
-              <e p="txt_InMemory.png" t="Include" />
-            </e>
-            <e p="txt_InMemoryOf.xnb" t="Include" />
-            <e p="txt_RogerZelazny.xnb" t="Include" />
-          </e>
-        </e>
-        <e p="constants.txt" t="Include" />
+        <e p="bg_1.png" t="Include" />
+        <e p="bg_inputframe.png" t="Include" />
+        <e p="black.png" t="Include" />
         <e p="Content.mgcb" t="Include" />
-        <e p="glyph_10.png" t="Include" />
-        <e p="glyph_11.png" t="Include" />
-        <e p="glyph_12.png" t="Include" />
-        <e p="glyph_13.png" t="Include" />
-        <e p="glyph_14.png" t="Include" />
-        <e p="glyph_15.png" t="Include" />
-        <e p="glyph_16.png" t="Include" />
-        <e p="glyph_17.png" t="Include" />
-        <e p="glyph_18.png" t="Include" />
-        <e p="glyph_20.png" t="Include" />
-        <e p="glyph_21.png" t="Include" />
-        <e p="glyph_22.png" t="Include" />
-        <e p="glyph_23.png" t="Include" />
-        <e p="glyph_30.png" t="Include" />
-        <e p="glyph_31.png" t="Include" />
-        <e p="glyph_32.png" t="Include" />
-        <e p="glyph_33.png" t="Include" />
-        <e p="glyph_34.png" t="Include" />
-        <e p="glyph_35.png" t="Include" />
-        <e p="glyph_36.png" t="Include" />
-        <e p="glyph_37.png" t="Include" />
-        <e p="glyph_40.png" t="Include" />
-        <e p="glyph_41.png" t="Include" />
-        <e p="glyph_50.png" t="Include" />
-        <e p="glyph_51.png" t="Include" />
-        <e p="glyph_60.png" t="Include" />
-        <e p="glyph_61.png" t="Include" />
-        <e p="glyph_62.png" t="Include" />
-        <e p="glyph_63.png" t="Include" />
-        <e p="glyph_64.png" t="Include" />
-        <e p="glyph_65.png" t="Include" />
-        <e p="glyph_70.png" t="Include" />
-        <e p="glyph_71.png" t="Include" />
-        <e p="glyph_72.png" t="Include" />
+        <e p="Controls.png" t="Include" />
+        <e p="Font.bmfc" t="Include" />
+        <e p="gwv2476.tmp" t="Include" />
+        <e p="gwvACD6.tmp" t="Include" />
+        <e p="intro_1.jpg" t="Include" />
+        <e p="intro_2.jpg" t="Include" />
+        <e p="intro_3.jpg" t="Include" />
+        <e p="Music-TheEldestTribe.wav" t="Include" />
         <e p="obj" t="Include">
           <e p="DesktopGL" t="Include">
-            <e p="Content" t="Include" />
+            <e p=".mgcontent" t="Include" />
+            <e p="bg_1.mgcontent" t="Include" />
+            <e p="bg_inputframe.mgcontent" t="Include" />
+            <e p="black.mgcontent" t="Include" />
+            <e p="Content" t="Include">
+              <e p=".mgcontent" t="Include" />
+              <e p="bg_1.mgcontent" t="Include" />
+              <e p="bg_inputframe.mgcontent" t="Include" />
+              <e p="black.mgcontent" t="Include" />
+              <e p="Controls.mgcontent" t="Include" />
+              <e p="intro_1.mgcontent" t="Include" />
+              <e p="intro_2.mgcontent" t="Include" />
+              <e p="intro_3.mgcontent" t="Include" />
+              <e p="Music-TheEldestTribe.mgcontent" t="Include" />
+              <e p="sfx_Glass.mgcontent" t="Include" />
+              <e p="sfx_GlassRev.mgcontent" t="Include" />
+              <e p="sfx_levelCompleted.mgcontent" t="Include" />
+              <e p="sfx_Step1.mgcontent" t="Include" />
+              <e p="sfx_Step2.mgcontent" t="Include" />
+              <e p="sfx_Step3.mgcontent" t="Include" />
+              <e p="sfx_Step4.mgcontent" t="Include" />
+              <e p="sfx_Step5.mgcontent" t="Include" />
+              <e p="sheet_font.mgcontent" t="Include" />
+              <e p="sheet_glyphs.mgcontent" t="Include" />
+              <e p="sheet_particles.mgcontent" t="Include" />
+              <e p="txt_InMemory.mgcontent" t="Include" />
+            </e>
+            <e p="Controls.mgcontent" t="Include" />
+            <e p="intro_1.mgcontent" t="Include" />
+            <e p="intro_2.mgcontent" t="Include" />
+            <e p="intro_3.mgcontent" t="Include" />
+            <e p="Music-TheEldestTribe.mgcontent" t="Include" />
+            <e p="sfx_Glass.mgcontent" t="Include" />
+            <e p="sfx_GlassRev.mgcontent" t="Include" />
+            <e p="sfx_levelCompleted.mgcontent" t="Include" />
+            <e p="sfx_Step1.mgcontent" t="Include" />
+            <e p="sfx_Step2.mgcontent" t="Include" />
+            <e p="sfx_Step3.mgcontent" t="Include" />
+            <e p="sfx_Step4.mgcontent" t="Include" />
+            <e p="sfx_Step5.mgcontent" t="Include" />
+            <e p="sheet_font.mgcontent" t="Include" />
+            <e p="sheet_glyphs.mgcontent" t="Include" />
+            <e p="sheet_particles.mgcontent" t="Include" />
+            <e p="txt_InMemory.mgcontent" t="Include" />
           </e>
         </e>
+        <e p="sfx_Glass.wav" t="Include" />
+        <e p="sfx_GlassRev.wav" t="Include" />
+        <e p="sfx_levelCompleted.wav" t="Include" />
+        <e p="sfx_Step1.wav" t="Include" />
+        <e p="sfx_Step2.wav" t="Include" />
+        <e p="sfx_Step3.wav" t="Include" />
+        <e p="sfx_Step4.wav" t="Include" />
+        <e p="sfx_Step5.wav" t="Include" />
+        <e p="sheet_font.fnt" t="Include" />
+        <e p="sheet_font.png" t="Include" />
+        <e p="sheet_glyphs.png" t="Include" />
+        <e p="sheet_glyphs.txt" t="Include" />
+        <e p="sheet_particles.png" t="Include" />
+        <e p="sheet_particles.txt" t="Include" />
         <e p="txt_InMemory.png" t="Include" />
       </e>
       <e p="Core" t="Include">
+        <e p="CustomBlendStates.cs" t="Include" />
         <e p="GameCore.cs" t="Include" />
         <e p="Gfx.cs" t="Include" />
         <e p="IScene.cs" t="Include" />
         <e p="KeyboardManager.cs" t="Include" />
         <e p="Logger.cs" t="Include" />
         <e p="S.cs" t="Include" />
+        <e p="Save.cs" t="Include" />
         <e p="SceneManager.cs" t="Include" />
+        <e p="Sfx.cs" t="Include" />
         <e p="StateMachine.cs" t="Include" />
-        <e p="Tween.cs" t="Include" />
-        <e p="TweenSequence.cs" t="Include" />
+        <e p="TextureAtlas.cs" t="Include" />
+        <e p="Tweens" t="Include">
+          <e p="ITween.cs" t="Include" />
+          <e p="TweenCallback.cs" t="Include" />
+          <e p="TweenFloat.cs" t="Include" />
+          <e p="TweenFloatEaseOut.cs" t="Include" />
+          <e p="TweenParallel.cs" t="Include" />
+          <e p="TweenSequence.cs" t="Include" />
+          <e p="TweenSleep.cs" t="Include" />
+        </e>
       </e>
       <e p="Extensions" t="Include">
         <e p="RectangleExtension.cs" t="Include" />
@@ -167,6 +139,7 @@
           <e p="EngineParserState.cs" t="Include" />
           <e p="Handlers" t="Include">
             <e p="StateParser_Action.cs" t="Include" />
+            <e p="StateParser_Bomb.cs" t="Include" />
             <e p="StateParser_Cameleon.cs" t="Include" />
             <e p="StateParser_Ignore.cs" t="Include" />
             <e p="StateParser_Invert.cs" t="Include" />
@@ -189,6 +162,194 @@
       <e p="logs" t="Include">
         <e p="2018-02-11_20-20-35-1412.txt" t="Include" />
         <e p="2018-02-11_20-21-04-6268.txt" t="Include" />
+        <e p="2018-02-11_22-59-10-1989.txt" t="Include" />
+        <e p="2018-02-11_22-59-39-1269.txt" t="Include" />
+        <e p="2018-02-11_23-05-37-3148.txt" t="Include" />
+        <e p="2018-02-12_07-25-14-9417.txt" t="Include" />
+        <e p="2018-02-12_07-26-09-5206.txt" t="Include" />
+        <e p="2018-02-12_07-26-46-2337.txt" t="Include" />
+        <e p="2018-02-12_07-27-10-7855.txt" t="Include" />
+        <e p="2018-02-12_07-35-25-2248.txt" t="Include" />
+        <e p="2018-02-12_07-40-07-6288.txt" t="Include" />
+        <e p="2018-02-12_07-40-41-9049.txt" t="Include" />
+        <e p="2018-02-12_07-41-22-0455.txt" t="Include" />
+        <e p="2018-02-12_07-42-09-6141.txt" t="Include" />
+        <e p="2018-02-12_07-44-05-1348.txt" t="Include" />
+        <e p="2018-02-13_08-35-47-3067.txt" t="Include" />
+        <e p="2018-02-13_08-36-19-3600.txt" t="Include" />
+        <e p="2018-02-13_08-41-43-1989.txt" t="Include" />
+        <e p="2018-02-13_08-42-02-3732.txt" t="Include" />
+        <e p="2018-02-13_08-42-49-6963.txt" t="Include" />
+        <e p="2018-02-13_08-44-46-8017.txt" t="Include" />
+        <e p="2018-02-14_07-17-44-2231.txt" t="Include" />
+        <e p="2018-02-14_07-41-11-6703.txt" t="Include" />
+        <e p="2018-02-14_07-42-41-0619.txt" t="Include" />
+        <e p="2018-02-14_07-43-02-0882.txt" t="Include" />
+        <e p="2018-02-14_07-44-11-2067.txt" t="Include" />
+        <e p="2018-02-14_07-44-37-6802.txt" t="Include" />
+        <e p="2018-02-14_07-46-14-5748.txt" t="Include" />
+        <e p="2018-02-14_07-47-44-9684.txt" t="Include" />
+        <e p="2018-02-14_07-48-18-4536.txt" t="Include" />
+        <e p="2018-02-14_17-11-22-5037.txt" t="Include" />
+        <e p="2018-02-14_17-39-48-0246.txt" t="Include" />
+        <e p="2018-02-14_17-40-21-7808.txt" t="Include" />
+        <e p="2018-02-14_17-42-00-3084.txt" t="Include" />
+        <e p="2018-02-14_17-56-46-4844.txt" t="Include" />
+        <e p="2018-02-14_20-31-18-3812.txt" t="Include" />
+        <e p="2018-02-14_20-33-02-9726.txt" t="Include" />
+        <e p="2018-02-14_20-35-05-2034.txt" t="Include" />
+        <e p="2018-02-14_20-38-00-9633.txt" t="Include" />
+        <e p="2018-02-14_20-54-08-8877.txt" t="Include" />
+        <e p="2018-02-14_20-54-56-0829.txt" t="Include" />
+        <e p="2018-02-14_20-56-10-9020.txt" t="Include" />
+        <e p="2018-02-14_20-57-07-1002.txt" t="Include" />
+        <e p="2018-02-14_21-00-57-7341.txt" t="Include" />
+        <e p="2018-02-14_23-10-29-3197.txt" t="Include" />
+        <e p="2018-02-14_23-15-34-4644.txt" t="Include" />
+        <e p="2018-02-14_23-21-04-3420.txt" t="Include" />
+        <e p="2018-02-14_23-22-34-6183.txt" t="Include" />
+        <e p="2018-02-14_23-23-05-6636.txt" t="Include" />
+        <e p="2018-02-14_23-23-22-9044.txt" t="Include" />
+        <e p="2018-02-14_23-24-19-4499.txt" t="Include" />
+        <e p="2018-02-14_23-24-42-3092.txt" t="Include" />
+        <e p="2018-02-14_23-28-27-9584.txt" t="Include" />
+        <e p="2018-02-14_23-29-04-9350.txt" t="Include" />
+        <e p="2018-02-14_23-32-29-0322.txt" t="Include" />
+        <e p="2018-02-14_23-33-49-3019.txt" t="Include" />
+        <e p="2018-02-14_23-35-04-7621.txt" t="Include" />
+        <e p="2018-02-14_23-37-40-9159.txt" t="Include" />
+        <e p="2018-02-14_23-37-51-9106.txt" t="Include" />
+        <e p="2018-02-15_22-28-58-4889.txt" t="Include" />
+        <e p="2018-02-15_22-31-10-8971.txt" t="Include" />
+        <e p="2018-02-15_22-31-39-2010.txt" t="Include" />
+        <e p="2018-02-15_23-48-58-9542.txt" t="Include" />
+        <e p="2018-02-15_23-49-28-8903.txt" t="Include" />
+        <e p="2018-02-15_23-50-53-8268.txt" t="Include" />
+        <e p="2018-02-15_23-53-24-0527.txt" t="Include" />
+        <e p="2018-02-15_23-54-18-7445.txt" t="Include" />
+        <e p="2018-02-15_23-55-22-6402.txt" t="Include" />
+        <e p="2018-02-15_23-56-24-8017.txt" t="Include" />
+        <e p="2018-02-15_23-57-28-8665.txt" t="Include" />
+        <e p="2018-02-15_23-58-30-8604.txt" t="Include" />
+        <e p="2018-02-15_23-58-52-6269.txt" t="Include" />
+        <e p="2018-02-16_00-00-05-1496.txt" t="Include" />
+        <e p="2018-02-16_00-00-20-5828.txt" t="Include" />
+        <e p="2018-02-16_00-00-56-6368.txt" t="Include" />
+        <e p="2018-02-16_00-01-27-6029.txt" t="Include" />
+        <e p="2018-02-16_00-02-23-3534.txt" t="Include" />
+        <e p="2018-02-17_20-40-36-5498.txt" t="Include" />
+        <e p="2018-02-17_20-46-43-1726.txt" t="Include" />
+        <e p="2018-02-17_20-47-14-6790.txt" t="Include" />
+        <e p="2018-02-17_20-49-49-7310.txt" t="Include" />
+        <e p="2018-02-17_20-54-26-6842.txt" t="Include" />
+        <e p="2018-02-17_21-48-52-7794.txt" t="Include" />
+        <e p="2018-02-17_22-06-40-3528.txt" t="Include" />
+        <e p="2018-02-17_22-07-18-2093.txt" t="Include" />
+        <e p="2018-02-17_22-08-35-9347.txt" t="Include" />
+        <e p="2018-02-17_22-09-03-5734.txt" t="Include" />
+        <e p="2018-02-17_22-09-32-2951.txt" t="Include" />
+        <e p="2018-02-17_22-09-56-3068.txt" t="Include" />
+        <e p="2018-02-17_22-18-41-6708.txt" t="Include" />
+        <e p="2018-02-17_22-19-41-7339.txt" t="Include" />
+        <e p="2018-02-17_22-20-08-5483.txt" t="Include" />
+        <e p="2018-02-17_22-25-49-9708.txt" t="Include" />
+        <e p="2018-02-17_22-26-22-9012.txt" t="Include" />
+        <e p="2018-02-17_22-28-03-8307.txt" t="Include" />
+        <e p="2018-02-17_22-29-27-8452.txt" t="Include" />
+        <e p="2018-02-17_22-31-24-5249.txt" t="Include" />
+        <e p="2018-02-17_22-32-04-6536.txt" t="Include" />
+        <e p="2018-02-17_22-39-53-1136.txt" t="Include" />
+        <e p="2018-02-17_22-40-48-6505.txt" t="Include" />
+        <e p="2018-02-17_22-43-35-5088.txt" t="Include" />
+        <e p="2018-02-17_22-55-38-7296.txt" t="Include" />
+        <e p="2018-02-17_22-56-15-6287.txt" t="Include" />
+        <e p="2018-02-17_22-57-57-6372.txt" t="Include" />
+        <e p="2018-02-17_22-58-39-9495.txt" t="Include" />
+        <e p="2018-02-17_23-01-21-6622.txt" t="Include" />
+        <e p="2018-02-17_23-02-31-8446.txt" t="Include" />
+        <e p="2018-02-17_23-03-21-5487.txt" t="Include" />
+        <e p="2018-02-17_23-03-51-5095.txt" t="Include" />
+        <e p="2018-02-17_23-04-10-5076.txt" t="Include" />
+        <e p="2018-02-17_23-05-54-3055.txt" t="Include" />
+        <e p="2018-02-17_23-06-29-6553.txt" t="Include" />
+        <e p="2018-02-17_23-07-58-2377.txt" t="Include" />
+        <e p="2018-02-17_23-09-46-7329.txt" t="Include" />
+        <e p="2018-02-17_23-10-53-4831.txt" t="Include" />
+        <e p="2018-02-17_23-11-34-5820.txt" t="Include" />
+        <e p="2018-02-17_23-12-11-6949.txt" t="Include" />
+        <e p="2018-02-17_23-12-30-0293.txt" t="Include" />
+        <e p="2018-02-17_23-15-11-8159.txt" t="Include" />
+        <e p="2018-02-17_23-21-37-5038.txt" t="Include" />
+        <e p="2018-02-17_23-21-55-6267.txt" t="Include" />
+        <e p="2018-02-17_23-22-38-7172.txt" t="Include" />
+        <e p="2018-02-17_23-23-14-6621.txt" t="Include" />
+        <e p="2018-02-17_23-23-51-2166.txt" t="Include" />
+        <e p="2018-02-18_00-22-55-7325.txt" t="Include" />
+        <e p="2018-02-18_00-23-29-5763.txt" t="Include" />
+        <e p="2018-02-18_00-24-34-7871.txt" t="Include" />
+        <e p="2018-02-18_00-25-19-3758.txt" t="Include" />
+        <e p="2018-02-18_00-28-34-1338.txt" t="Include" />
+        <e p="2018-02-18_00-29-26-3881.txt" t="Include" />
+        <e p="2018-02-18_00-29-54-5613.txt" t="Include" />
+        <e p="2018-02-18_00-30-47-2942.txt" t="Include" />
+        <e p="2018-02-18_00-31-26-3608.txt" t="Include" />
+        <e p="2018-02-18_00-32-18-9755.txt" t="Include" />
+        <e p="2018-02-18_00-32-38-1160.txt" t="Include" />
+        <e p="2018-02-18_00-42-55-2303.txt" t="Include" />
+        <e p="2018-02-18_00-46-42-7992.txt" t="Include" />
+        <e p="2018-02-18_00-47-14-6418.txt" t="Include" />
+        <e p="2018-02-18_00-47-47-2726.txt" t="Include" />
+        <e p="2018-02-18_00-48-25-9257.txt" t="Include" />
+        <e p="2018-02-18_00-49-40-3114.txt" t="Include" />
+        <e p="2018-02-18_00-56-14-8328.txt" t="Include" />
+        <e p="2018-02-18_00-56-39-2863.txt" t="Include" />
+        <e p="2018-02-18_00-57-03-8468.txt" t="Include" />
+        <e p="2018-02-18_00-57-36-7993.txt" t="Include" />
+        <e p="2018-02-18_00-57-51-1475.txt" t="Include" />
+        <e p="2018-02-18_00-58-15-0366.txt" t="Include" />
+        <e p="2018-02-18_00-58-35-0562.txt" t="Include" />
+        <e p="2018-02-18_01-02-07-5619.txt" t="Include" />
+        <e p="2018-02-18_01-02-27-2834.txt" t="Include" />
+        <e p="2018-02-18_01-02-42-5290.txt" t="Include" />
+        <e p="2018-02-18_01-03-09-0802.txt" t="Include" />
+        <e p="2018-02-18_01-09-20-1329.txt" t="Include" />
+        <e p="2018-02-18_01-09-37-5520.txt" t="Include" />
+        <e p="2018-02-18_01-10-09-8283.txt" t="Include" />
+        <e p="2018-02-18_01-11-11-9556.txt" t="Include" />
+        <e p="2018-02-18_01-12-49-8717.txt" t="Include" />
+        <e p="2018-02-18_01-13-54-1805.txt" t="Include" />
+        <e p="2018-02-18_01-19-21-1464.txt" t="Include" />
+        <e p="2018-02-18_01-20-01-8774.txt" t="Include" />
+        <e p="2018-02-18_01-38-46-8050.txt" t="Include" />
+        <e p="2018-02-18_02-30-30-4330.txt" t="Include" />
+        <e p="2018-02-18_02-34-02-2286.txt" t="Include" />
+        <e p="2018-02-18_02-48-10-6809.txt" t="Include" />
+        <e p="2018-02-18_02-56-48-8576.txt" t="Include" />
+        <e p="2018-02-18_02-57-17-9485.txt" t="Include" />
+        <e p="2018-02-18_02-57-47-9996.txt" t="Include" />
+        <e p="2018-02-18_02-58-18-2810.txt" t="Include" />
+        <e p="2018-02-18_02-59-27-6895.txt" t="Include" />
+        <e p="2018-02-18_03-00-47-8975.txt" t="Include" />
+        <e p="2018-02-18_03-02-31-7001.txt" t="Include" />
+        <e p="2018-02-18_03-03-56-8197.txt" t="Include" />
+        <e p="2018-02-18_03-05-14-9092.txt" t="Include" />
+        <e p="2018-02-18_03-17-09-0094.txt" t="Include" />
+        <e p="2018-02-18_03-27-46-4296.txt" t="Include" />
+        <e p="2018-02-18_03-28-07-7144.txt" t="Include" />
+        <e p="2018-02-18_03-28-33-2939.txt" t="Include" />
+        <e p="2018-02-18_03-28-55-4572.txt" t="Include" />
+        <e p="2018-02-18_03-31-47-7800.txt" t="Include" />
+        <e p="2018-02-18_03-42-44-4922.txt" t="Include" />
+        <e p="2018-02-18_03-48-33-7003.txt" t="Include" />
+        <e p="2018-02-18_03-48-50-8574.txt" t="Include" />
+        <e p="2018-02-18_03-49-31-0164.txt" t="Include" />
+        <e p="2018-02-18_03-50-11-8053.txt" t="Include" />
+        <e p="2018-02-18_03-50-29-8283.txt" t="Include" />
+        <e p="2018-02-18_03-51-28-1348.txt" t="Include" />
+        <e p="2018-02-18_03-51-52-6010.txt" t="Include" />
+        <e p="2018-02-18_03-52-33-5012.txt" t="Include" />
+        <e p="2018-02-18_03-52-47-3944.txt" t="Include" />
+        <e p="2018-02-18_10-36-55-6096.txt" t="Include" />
       </e>
       <e p="Main.cs" t="Include" />
       <e p="obj" t="ExcludeRecursive">
@@ -203,12 +364,27 @@
         <e p="Ingame" t="Include">
           <e p="IngameScene.cs" t="Include" />
           <e p="IngameScreen.cs" t="Include" />
+          <e p="IngameScreenMessage.cs" t="Include" />
+          <e p="LevelProceedBlockEffect.cs" t="Include" />
+          <e p="particles" t="Include">
+            <e p="ParticleSmoke.cs" t="Include" />
+            <e p="ParticleStone.cs" t="Include" />
+          </e>
+          <e p="PauseView.cs" t="Include" />
+          <e p="RendererActionBrick.cs" t="Include" />
+          <e p="RendererAnimation.cs" t="Include" />
+          <e p="RendererGlyph.cs" t="Include" />
+          <e p="ScreenData.cs" t="Include" />
           <e p="ScreensCollection.cs" t="Include" />
         </e>
         <e p="InMemoriam" t="Include">
           <e p="InMemoriamScene.cs" t="Include" />
         </e>
+        <e p="Intro" t="Include">
+          <e p="IntroScene.cs" t="Include" />
+        </e>
       </e>
+      <e p="todo.txt" t="Include" />
       <e p="Utils" t="Include">
         <e p="MathUtils.cs" t="Include" />
       </e>

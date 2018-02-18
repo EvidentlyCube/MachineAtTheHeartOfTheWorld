@@ -14,116 +14,194 @@
 #---------------------------------- Content ---------------------------------#
 
 #begin txt_InMemory.png
-/copy:txt_InMemory.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:txt_InMemory.png
 
-#begin glyph_10.png
-/copy:glyph_10.png
+#begin sheet_font.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:sheet_font.png
 
-#begin glyph_11.png
-/copy:glyph_11.png
+#begin intro_1.jpg
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=False
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:intro_1.jpg
 
-#begin glyph_12.png
-/copy:glyph_12.png
+#begin intro_3.jpg
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:intro_3.jpg
 
-#begin glyph_13.png
-/copy:glyph_13.png
+#begin sheet_glyphs.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=False
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:sheet_glyphs.png
 
-#begin glyph_14.png
-/copy:glyph_14.png
+#begin sheet_glyphs.txt
+/copy:sheet_glyphs.txt
 
-#begin glyph_15.png
-/copy:glyph_15.png
+#begin bg_1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:bg_1.png
 
-#begin glyph_16.png
-/copy:glyph_16.png
+#begin bg_inputframe.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:bg_inputframe.png
 
-#begin glyph_17.png
-/copy:glyph_17.png
+#begin sheet_particles.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=False
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:sheet_particles.png
 
-#begin glyph_18.png
-/copy:glyph_18.png
+#begin sheet_particles.txt
+/copy:sheet_particles.txt
 
-#begin glyph_20.png
-/copy:glyph_20.png
+#begin sfx_Step1.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:sfx_Step1.wav
 
-#begin glyph_21.png
-/copy:glyph_21.png
+#begin sfx_Step2.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:sfx_Step2.wav
 
-#begin glyph_22.png
-/copy:glyph_22.png
+#begin sfx_Step3.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:sfx_Step3.wav
 
-#begin glyph_23.png
-/copy:glyph_23.png
+#begin sfx_Step4.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:sfx_Step4.wav
 
-#begin glyph_30.png
-/copy:glyph_30.png
+#begin sfx_Step5.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:sfx_Step5.wav
 
-#begin glyph_31.png
-/copy:glyph_31.png
+#begin sfx_Glass.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:sfx_Glass.wav
 
-#begin glyph_32.png
-/copy:glyph_32.png
+#begin sfx_GlassRev.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:sfx_GlassRev.wav
 
-#begin glyph_33.png
-/copy:glyph_33.png
+#begin sfx_levelCompleted.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:sfx_levelCompleted.wav
 
-#begin glyph_34.png
-/copy:glyph_34.png
+#begin Music-TheEldestTribe.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Music-TheEldestTribe.wav
 
-#begin glyph_35.png
-/copy:glyph_35.png
+#begin intro_2.jpg
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:intro_2.jpg
 
-#begin glyph_36.png
-/copy:glyph_36.png
+#begin Controls.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=False
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Controls.png
 
-#begin glyph_37.png
-/copy:glyph_37.png
-
-#begin glyph_40.png
-/copy:glyph_40.png
-
-#begin glyph_41.png
-/copy:glyph_41.png
-
-#begin glyph_50.png
-/copy:glyph_50.png
-
-#begin glyph_51.png
-/copy:glyph_51.png
-
-#begin glyph_60.png
-/copy:glyph_60.png
-
-#begin glyph_61.png
-/copy:glyph_61.png
-
-#begin glyph_62.png
-/copy:glyph_62.png
-
-#begin glyph_63.png
-/copy:glyph_63.png
-
-#begin glyph_64.png
-/copy:glyph_64.png
-
-#begin glyph_65.png
-/copy:glyph_65.png
-
-#begin glyph_70.png
-/copy:glyph_70.png
-
-#begin glyph_71.png
-/copy:glyph_71.png
-
-#begin glyph_72.png
-/copy:glyph_72.png
-
-#begin bg_1.jpg
-/copy:bg_1.jpg
-
-#begin bg_monitor.png
-/copy:bg_monitor.png
-
-#begin constants.txt
-/copy:constants.txt
+#begin black.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:black.png
 

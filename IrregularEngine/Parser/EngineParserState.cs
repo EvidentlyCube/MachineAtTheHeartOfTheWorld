@@ -8,7 +8,7 @@ namespace IrregularMachine.IrregularEngine.Parser {
         public readonly EngineParser EngineParser;
         public EngineTile[,] Tiles { get; }
         public ParserPosition Position { get; }
-        private List<EngineActionType> Actions { get; }
+        public List<EngineActionType> Actions { get; private set; }
 
         public int LastNumberGroup;
         public int CurrentNumberGroup;
@@ -40,29 +40,6 @@ namespace IrregularMachine.IrregularEngine.Parser {
             }
         }
 
-        public List<Tuple<EngineActionType, int>> GetSquashedActions() {
-            var list = new List<Tuple<EngineActionType, int>>();
-
-            EngineActionType? lastType = null;
-            int count = 0;
-            foreach (var actionType in Actions) {
-                if (lastType.HasValue && lastType.Value != actionType) {
-                    list.Add(new Tuple<EngineActionType, int>(lastType.Value, count));
-                    lastType = actionType;
-                    count = 0;
-                } else if (!lastType.HasValue) {
-                    lastType = actionType;
-                }
-
-                count++;
-            }
-
-            if (lastType.HasValue)
-                list.Add(new Tuple<EngineActionType, int>(lastType.Value, count));
-
-            return list;
-        }
-
         public bool GetAndFlushInverting() {
             var value = _isInverting;
             _isInverting = false;
@@ -85,5 +62,17 @@ namespace IrregularMachine.IrregularEngine.Parser {
         
         public EngineTile this[Point position] => Tiles[position.X, position.Y];
         public EngineTile this[ParserPosition index] => Tiles[index.Position.X, index.Position.Y];
+
+        public void Explode(int range) {
+            for (var x = Position.Position.X - range; x < Position.Position.X + range; x++) {
+                for (var y = Position.Position.Y - range; y < Position.Position.Y + range; y++) {
+                    if (!IsValidPosition(x, y)) {
+                        continue;
+                    }
+                    
+                    Tiles[x, y] = new EngineTile(EngineGlyphType.Nothing);
+                }
+            }
+        }
     }
 }

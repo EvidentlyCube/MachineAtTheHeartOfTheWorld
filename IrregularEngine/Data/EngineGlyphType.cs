@@ -17,9 +17,9 @@ namespace IrregularMachine.IrregularEngine.Data {
         ActionMoveNW = 18,
 
         NumeralOne = 20,    
-        NumeralTwo,
-        NumeralFour,
-        NumeralEight,
+        NumeralTwo = 21,
+        NumeralFour = 22,
+        NumeralEight = 23,
 
         SpecialCameleonN = 30,
         SpecialCameleonNE = 31,
@@ -34,18 +34,16 @@ namespace IrregularMachine.IrregularEngine.Data {
         OperationSubtract = 41,
 
         ModifierInvert = 50,
-        ModifierIgnore,
+        ModifierIgnore = 51,
 
         SlicerAStart = 60,
-        SlicerAEnd,
-        SlicerBStart,
-        SlicerBEnd,
-        SlicerCStart,
-        SlicerCEnd,
+        SlicerAEnd = 61,
+        SlicerBStart = 62,
+        SlicerBEnd = 63,
+        SlicerCStart = 64,
+        SlicerCEnd = 65,
         
-        BombRange1 = 70,
-        BombRange2,
-        BombRange3
+        Bomb = 70
     }
     
     
@@ -72,6 +70,10 @@ namespace IrregularMachine.IrregularEngine.Data {
         }
         public static bool IsAction(this EngineGlyphType element) {
             return element.IsMoveAction() || element == EngineGlyphType.ActionSpecial;
+        }
+        
+        public static bool IsBomb(this EngineGlyphType element) {
+            return element == EngineGlyphType.Bomb;
         }
         
         public static bool IsNumeral(this EngineGlyphType element) {

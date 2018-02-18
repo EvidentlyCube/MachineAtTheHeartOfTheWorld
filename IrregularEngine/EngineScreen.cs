@@ -6,7 +6,6 @@ namespace IrregularMachine.IrregularEngine {
         public readonly int Width;
         public readonly int Height;
         
-
         public EngineScreen(int width, int height) {
             Width = width;
             Height = height;

@@ -3,11 +3,45 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
   <ItemGroup>
     <MonoGameContentReference Include="**\*.mgcb" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MonoGame.Content.Builder" Version="3.7.0.4" />
+    <PackageReference Include="MonoGame.Extended.Graphics" Version="1.0.617" />
     <PackageReference Include="MonoGame.Framework.DesktopGL.Core" Version="3.7.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="AtlasGenerator\node_modules\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="AtlasGenerator\node_modules\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="AtlasGenerator\node_modules\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Content\bin\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Content\bin\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Content\bin\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Content\Src\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Content\Src\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Content\Src\**" />
   </ItemGroup>
 </Project>

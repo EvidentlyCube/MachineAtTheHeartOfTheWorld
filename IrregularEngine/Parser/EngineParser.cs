@@ -40,11 +40,18 @@ namespace IrregularMachine.IrregularEngine.Parser {
                 {EngineGlyphType.SpecialCameleonS, StateParser_Cameleon.ParseTile},
                 {EngineGlyphType.SpecialCameleonSW, StateParser_Cameleon.ParseTile},
                 {EngineGlyphType.SpecialCameleonW, StateParser_Cameleon.ParseTile},
-                {EngineGlyphType.SpecialCameleonNW, StateParser_Cameleon.ParseTile}
+                {EngineGlyphType.SpecialCameleonNW, StateParser_Cameleon.ParseTile},
+                {EngineGlyphType.Bomb, StateParser_Bomb.ParseTile},
+                {EngineGlyphType.SlicerAStart, StateParser_Nothing.ParseTile},
+                {EngineGlyphType.SlicerAEnd, StateParser_Nothing.ParseTile},
+                {EngineGlyphType.SlicerBStart, StateParser_Nothing.ParseTile},
+                {EngineGlyphType.SlicerBEnd, StateParser_Nothing.ParseTile}, // Todo add parser
+                {EngineGlyphType.SlicerCStart, StateParser_Nothing.ParseTile},
+                {EngineGlyphType.SlicerCEnd, StateParser_Nothing.ParseTile},
             };
         }
 
-        public List<Tuple<EngineActionType, int>> Parse() {
+        public List<EngineActionType> Parse() {
             _state.Reset();
 
             while (!_state.IsFinished) {
@@ -52,7 +59,7 @@ namespace IrregularMachine.IrregularEngine.Parser {
                 ParseTile(tile);
             }
 
-            return _state.GetSquashedActions();
+            return _state.Actions;
         }
 
         public void ParseTile(EngineTile tile) {
