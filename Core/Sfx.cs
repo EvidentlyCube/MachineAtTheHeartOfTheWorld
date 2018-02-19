@@ -22,6 +22,7 @@ namespace IrregularMachine.Core {
         
         public static SoundEffect MusicOutro { get; private set; }
         public static SoundEffect Punch;
+        public static SoundEffect BodyFall;
 
         public static Dictionary<string, SoundEffect> VoiceOvers;
 
@@ -48,6 +49,7 @@ namespace IrregularMachine.Core {
             Logger.Init("Loading SFX assets");
             
             Punch = LoadSfx(content, "sfx_punch");
+            BodyFall = LoadSfx(content, "sfx_bodyFall");
             
             Music = LoadSfx(content, "Music-TheEldestTribe");
             MusicOutro = LoadSfx(content, "Music-Outro");

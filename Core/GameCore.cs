@@ -74,7 +74,7 @@ namespace IrregularMachine.Core {
             
             Save.LoadSave();
 
-            if (Save.LastLevel == S.LastLevelIndex) {
+            if (Save.LastLevel == S.LastLevelIndex + 1) {
                 SceneManager = new SceneManager(new OutroScene());                
             }
             else {

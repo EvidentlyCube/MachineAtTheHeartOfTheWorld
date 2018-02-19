@@ -130,7 +130,7 @@ namespace IrregularMachine.Scenes.Ingame {
                     _stoneParticles.Add(new ParticleStone());
                     _stoneParticles.Add(new ParticleStone());
                     Sfx.PlayLevelCompleted();
-                    Save.LastLevel = (int)_renderOffset + 2;
+                    Save.LastLevel = (int)_renderOffset + 1;
                     Save.WriteSave();
                 }
                 else {    

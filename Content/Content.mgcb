@@ -415,18 +415,6 @@
 /processorParam:Quality=Best
 /build:voice_intro3e.wav
 
-#begin outro.jpg
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:outro.jpg
-
 #begin Music-TheEldestTribe.ogg
 /importer:OggImporter
 /processor:SoundEffectProcessor
@@ -483,4 +471,22 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:intro_3.png
+
+#begin outro.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:outro.png
+
+#begin sfx_bodyFall.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:sfx_bodyFall.wav
 

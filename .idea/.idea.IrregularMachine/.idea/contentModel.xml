@@ -51,6 +51,7 @@
               <e p="Music-Outro.mgcontent" t="Include" />
               <e p="Music-TheEldestTribe.mgcontent" t="Include" />
               <e p="outro.mgcontent" t="Include" />
+              <e p="sfx_bodyFall.mgcontent" t="Include" />
               <e p="sfx_Glass.mgcontent" t="Include" />
               <e p="sfx_GlassRev.mgcontent" t="Include" />
               <e p="sfx_levelCompleted.mgcontent" t="Include" />
@@ -112,6 +113,7 @@
             <e p="Music-Outro.mgcontent" t="Include" />
             <e p="Music-TheEldestTribe.mgcontent" t="Include" />
             <e p="outro.mgcontent" t="Include" />
+            <e p="sfx_bodyFall.mgcontent" t="Include" />
             <e p="sfx_Glass.mgcontent" t="Include" />
             <e p="sfx_GlassRev.mgcontent" t="Include" />
             <e p="sfx_levelCompleted.mgcontent" t="Include" />
@@ -166,7 +168,8 @@
             <e p="voice_intro3e.mgcontent" t="Include" />
           </e>
         </e>
-        <e p="outro.jpg" t="Include" />
+        <e p="outro.png" t="Include" />
+        <e p="sfx_bodyFall.wav" t="Include" />
         <e p="sfx_Glass.wav" t="Include" />
         <e p="sfx_GlassRev.wav" t="Include" />
         <e p="sfx_levelCompleted.wav" t="Include" />

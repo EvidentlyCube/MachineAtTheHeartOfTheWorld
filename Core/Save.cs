@@ -12,6 +12,7 @@ namespace IrregularMachine.Core {
         public static void WriteSave() {
             var path = GetProgramDataPath() + Path.DirectorySeparatorChar + SaveName;
             Directory.CreateDirectory(GetProgramDataPath());
+            
             using (var file = new FileStream(path, FileMode.Create, FileAccess.Write))
             using (var writer = new BinaryWriter(file)) {
                 writer.Write((Int32)LastLevel);
@@ -35,8 +36,6 @@ namespace IrregularMachine.Core {
                     SoundVolume = reader.ReadSingle();
                     VoiceOverVolume = reader.ReadSingle();
                 }
-
-                LastLevel--;
             }
             catch (Exception) {
                 // Ignore
